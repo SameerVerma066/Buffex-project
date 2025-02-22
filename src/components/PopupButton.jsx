@@ -30,7 +30,7 @@ const PopupButton = () => {
       >
         {/* Instagram Icon */}
         <a
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/buffx_india/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
@@ -41,7 +41,7 @@ const PopupButton = () => {
 
         {/* WhatsApp Icon */}
         <a
-          href="https://www.whatsapp.com/+917070940199"
+          href="https://wa.me/+917070940199" 
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp"
