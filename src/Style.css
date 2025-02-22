@@ -1,0 +1,9 @@
+
+
+@import "tailwindcss";
+@theme {
+    --color-black: #000000;
+    --color-gold: #FFD700;
+    --font-oswald: Oswald;  /*for heading text* */
+    --font-nunito: Nunito Sans; /*for subtext* */
+}
