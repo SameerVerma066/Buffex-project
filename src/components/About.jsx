@@ -30,25 +30,25 @@ const About = () => {
     <section
       id="about"
       className={`py-16 px-6 transition-colors duration-2000 ${bgColor}`}
-      data-aos="fade-right" // AOS animation effect
+      data-aos="fade-left" // AOS animation effect
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0">
         {/* Text Content */}
         <div className="md:w-1/2 space-y-3">
           <h2 className="text-3xl md:text-5xl font-oswald">About Us</h2>
           <p className="font-nunito text-lg text-gray-600">
-            Founded in 2023 by Ahmad Ali, BuffX is a premium car detailing shop
-            specializing in Ceramic Coatings and Paint Protection Film (PPF) to
-            shield your car from rock chips, bird droppings, and daily wear. Our
-            high-quality, nearly invisible PPF keeps your car looking
-            showroom-ready for up to 8-10 years. We offer a full range of
-            services, including exterior polishing, interior cleaning, and
-            paint correction, using top-tier products and state-of-the-art
-            equipment. Whether it’s a luxury car, daily driver, or classic,
-            BuffX ensures your vehicle stays stunning and retains its value. We
-            are currently offering a special discount on PPF for new customers.
-            Protect your car and save on future repairs with BuffX’s expert
-            care!
+            BuffX is a premium car detailing shop specializing in Ceramic
+            Coatings and Paint Protection Film (PPF) to shield your car from
+            rock chips, bird droppings, and daily wear. Our high-quality, nearly
+            invisible PPF keeps your car looking showroom-ready for up to 8-10
+            years. We offer a full range of services, including exterior
+            polishing, interior cleaning, and paint correction, using top-tier
+            products and state-of-the-art equipment. Whether it’s a luxury car,
+            daily driver, or classic, BuffX ensures your vehicle stays stunning
+            and retains its value. Founded in 2023 by Ahmad Ali, BuffX is
+            committed to delivering expert care, and we are currently offering a
+            special discount on PPF for new customers. Protect your car and save
+            on future repairs with our premium services!
           </p>
         </div>
 
