@@ -1,6 +1,13 @@
-import { Mail, Phone, MapPin, Instagram, PhoneIcon as WhatsApp } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Instagram,
+  PhoneIcon as WhatsApp,
+} from "lucide-react";
 import defender from "../assets/photos/defender.jpg"; // Import your local background image
 import logo from "../assets/logo/logonew.png";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
   const handleSmoothScroll = (sectionId) => {
@@ -36,8 +43,9 @@ const Footer = () => {
             <div>
               <img src={logo} alt="BuffX Logo" className="mb-6 h-12" />
               <p className="mt-4">
-                Where every car Becomes the work of Art! Expert Car Detailing Service | Ceramic |
-                PPF Join us on the Road to Automotive Brilliance!
+                Where every car Becomes the work of Art! Expert Car Detailing
+                Service | Ceramic | PPF Join us on the Road to Automotive
+                Brilliance!
               </p>
               <h3 className="mt-6 font-semibold">We Are Social</h3>
               <div className="flex space-x-4 mt-4">
@@ -49,7 +57,7 @@ const Footer = () => {
                 >
                   <Instagram size={24} />
                 </a>
-                
+
                 <a
                   href="mailto:buffxindia@gmail.com"
                   target="_blank"
@@ -77,12 +85,9 @@ const Footer = () => {
                 >
                   Testimonials
                 </p>
-                <a
-                  href="/our-services"
-                  className="hover:text-yellow-500"
-                >
+                <Link to="/our-services" className="hover:text-yellow-500">
                   Our Services
-                </a>
+                </Link>
               </div>
             </div>
 
