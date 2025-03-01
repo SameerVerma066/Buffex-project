@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="relative flex flex-col min-h-screen bg-cover bg-center text-white py-40"
+      className="relative flex flex-col min-h-screen bg-cover bg-center text-white py-40 pb-24"
       style={{ backgroundImage: `url(${defender})` }}
     >
       {/* Dark Overlay */}

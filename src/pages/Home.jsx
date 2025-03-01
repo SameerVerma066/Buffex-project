@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import ScrollTopButton from "../components/scrolltotop";
 import loader from "../assets/loader/loader.gif"; // Import the logo
 
+
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true); // State to control loading screen
 
@@ -40,6 +41,7 @@ const Home = () => {
       {/* <Contact /> */}
       <Footer />
       <ScrollTopButton />
+      
     </>
   );
 };

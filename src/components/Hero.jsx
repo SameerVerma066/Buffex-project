@@ -24,7 +24,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 text-white max-w-2xl text-left space-y-6">
+      <div className="relative z-10 text-white max-w-2xl text-left space-y-6 pb-10">
         {/* Hero Title with Animated Text */}
         <h1 className="text-4xl md:text-6xl font-bold">
           <TextEffect

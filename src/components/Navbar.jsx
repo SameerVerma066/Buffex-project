@@ -73,7 +73,7 @@ const Navbar = () => {
       animate={{ opacity: animate ? 1 : 0, y: animate ? 0 : -50 }}
       transition={{ duration: 0 }}
     >
-      <div className="max-w-7xl mx-auto px-1 py-4 flex justify-between items-center">
+      <div className="max-w-[85rem] mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <img
           src={logo}
@@ -83,12 +83,26 @@ const Navbar = () => {
         />
 
         {/* Desktop Menu */}
-        <nav onMouseLeave={() => setActive(null)} className="hidden md:flex space-x-6 items-center">
-          <HoveredLink className={textColor} onClick={() => handleNavClick("home")}>Home</HoveredLink>
-          <HoveredLink className={textColor} onClick={() => handleNavClick("about")}>About</HoveredLink>
+        <nav
+          onMouseLeave={() => setActive(null)}
+          className="hidden md:flex space-x-6 items-center"
+        >
+          <HoveredLink
+            className={textColor}
+            onClick={() => handleNavClick("home")}
+          >
+            Home
+          </HoveredLink>
+          <HoveredLink
+            className={textColor}
+            onClick={() => handleNavClick("about")}
+          >
+            About
+          </HoveredLink>
 
           {/* Services Dropdown */}
-          <div className="relative flex items-center"
+          <div
+            className="relative flex items-center"
             onMouseEnter={() => setActive("Services")}
             onMouseLeave={() => setActive(null)}
           >
@@ -107,14 +121,27 @@ const Navbar = () => {
                 className="absolute top-full left-0 pt-2 w-48 bg-white rounded-xl border border-gray-200 shadow-lg"
               >
                 <motion.div className="p-4 space-y-2">
-                  <ProductItem title="Our Services" description="Different types of Services we provide for your car" href="/our-services" />
-                  <ProductItem title="Works" description="See our work in action" href="/our-services" />
+                  <ProductItem
+                    title="Our Services"
+                    description="Different types of Services we provide for your car"
+                    href="/our-services"
+                  />
+                  <ProductItem
+                    title="Works"
+                    description="See our work in action"
+                    href="/our-services"
+                  />
                 </motion.div>
               </motion.div>
             )}
           </div>
 
-          <HoveredLink className={textColor} onClick={() => handleNavClick("testimonials")}>Testimonials</HoveredLink>
+          <HoveredLink
+            className={textColor}
+            onClick={() => handleNavClick("testimonials")}
+          >
+            Testimonials
+          </HoveredLink>
 
           {/* Smooth scroll to the footer */}
           <ScrollLink
@@ -129,19 +156,41 @@ const Navbar = () => {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden text-yellow-500 text-3xl" onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          className="md:hidden text-yellow-500 text-3xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           ☰
         </button>
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}
-            className="absolute top-16 left-0 w-full bg-black p-6 text-white">
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="absolute top-16 left-0 w-full bg-black p-6 text-white"
+          >
             <ul className="flex flex-col space-y-4">
-              <li><HoveredLink onClick={() => handleNavClick("home")}>Home</HoveredLink></li>
-              <li><HoveredLink onClick={() => handleNavClick("about")}>About</HoveredLink></li>
-              <li><HoveredLink onClick={() => navigate("/our-services")}>Services</HoveredLink></li>
-              <li><HoveredLink onClick={() => handleNavClick("testimonials")}>Testimonials</HoveredLink></li>
+              <li>
+                <HoveredLink onClick={() => handleNavClick("home")}>
+                  Home
+                </HoveredLink>
+              </li>
+              <li>
+                <HoveredLink onClick={() => handleNavClick("about")}>
+                  About
+                </HoveredLink>
+              </li>
+              <li>
+                <HoveredLink onClick={() => navigate("/our-services")}>
+                  Services
+                </HoveredLink>
+              </li>
+              <li>
+                <HoveredLink onClick={() => handleNavClick("testimonials")}>
+                  Testimonials
+                </HoveredLink>
+              </li>
               <li>
                 <ScrollLink
                   to="footer"
@@ -164,8 +213,12 @@ const Navbar = () => {
 
 export const HoveredLink = ({ children, className, ...rest }) => {
   return (
-    <motion.span whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}
-      {...rest} className={`cursor-pointer transition-all hover:text-yellow-500 ${className}`}>
+    <motion.span
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.2 }}
+      {...rest}
+      className={`cursor-pointer transition-all hover:text-yellow-500 ${className}`}
+    >
       {children}
     </motion.span>
   );
@@ -173,7 +226,10 @@ export const HoveredLink = ({ children, className, ...rest }) => {
 
 export const ProductItem = ({ title, description, href }) => {
   return (
-    <div onClick={() => window.location.href = href} className="flex space-x-2 p-2 hover:bg-gray-200 cursor-pointer rounded-md">
+    <div
+      onClick={() => (window.location.href = href)}
+      className="flex space-x-2 p-2 hover:bg-gray-200 cursor-pointer rounded-md"
+    >
       <div>
         <h4 className="text-md font-bold mb-1 text-black">{title}</h4>
         <p className="text-gray-600 text-sm max-w-[10rem]">{description}</p>

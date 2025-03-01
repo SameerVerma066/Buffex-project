@@ -28,7 +28,6 @@ const accordionGroup1 = [
   },
 ];
 
-
 const accordionGroup2 = [
   {
     id: 4,
@@ -56,12 +55,11 @@ const accordionGroup2 = [
   },
 ];
 
-
 function AccordionItem({ title, content, isExpanded, onToggle }) {
   return (
     <div
       className={`bg-white  rounded-3xl overflow-hidden transition-all duration-300 ${
-        isExpanded ? "max-h-96" : "max-h-20"
+        isExpanded ? "max-h-screen" : "max-h-20"
       }`}
     >
       <div
@@ -80,7 +78,7 @@ function AccordionItem({ title, content, isExpanded, onToggle }) {
           isExpanded ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div>{content}</div>
+        <div className="break-words whitespace-normal text-justify">{content}</div>
       </div>
     </div>
   );
@@ -123,7 +121,7 @@ function Services() {
         OUR SERVICES
       </h1>
       <div
-        className="p-6 flex flex-col lg:flex-row lg:justify-evenly items-center gap-6 font-nunito"
+        className="p-3 flex flex-col lg:flex-row lg:justify-evenly items-center gap-6 font-nunito"
         data-aos="fade-up-right"
       >
         <AccordionGroup data={accordionGroup1} />

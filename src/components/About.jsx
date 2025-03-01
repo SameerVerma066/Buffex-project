@@ -30,7 +30,7 @@ const About = () => {
     <section
       id="about"
       className={`py-16 px-6 transition-colors duration-2000 ${bgColor}`}
-      data-aos="fade-left" // AOS animation effect
+      data-aos="fade-up" // AOS animation effect
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0">
         {/* Text Content */}

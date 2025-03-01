@@ -12,7 +12,7 @@ const ScrollToTopButton = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 flex flex-col items-center space-y-4">
+    <div className="fixed bottom-16 right-6 flex flex-col items-center space-y-4 z-50">
       {/* PopupButton above the ScrollToTopButton */}
       <PopupButton />
 
